@@ -1,0 +1,35 @@
+body {
+  margin-left: 25px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+li {
+	list-style: none;
+}
+
+#first-paragraph {
+	font-weight: bold;
+}
+
+#second-paragraph {
+	font-style: italic;
+}
+
+#afternoon-head {
+	color: blue;
+}
+
+#evening-head {
+	color: purple;
+}
