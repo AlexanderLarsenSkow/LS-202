@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Table</title>
+    <meta charset="utf-8">
+		<style>
+
+			table {
+				font-size: 1.5rem;
+			}
+
+			th {
+				font-size: 1.75rem;
+			}
+
+			tbody tr {
+				font-style: italic;
+			}
+
+			tbody tr:nth-child(1) {
+				color: red;
+			}
+
+			tbody tr:nth-child(2) {
+				color: green;
+			}
+
+			tbody r:nth-child(3) {
+				color: blue;
+			}
+
+			tfoot tr {
+				font-size: 1rem;
+			}
+
+			tfoot td {
+				border-top: 1px solid gray;
+			}
+
+			td {
+				text-align: center;
+			}
+
+			thead th {
+				padding: 0 10px;
+				text-decoration: underline;
+			}
+
+			tbody th {
+				text-transform: uppercase;
+			}
+
+			[scope="col"] {
+				padding: 0 10px;
+				text-decoration: underline;
+			}
+
+			[scope="row"] {
+				text-transform: uppercase;
+			}
+
+		</style>
+  </head>
+  <body>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Color Name</th>
+					<th>Color Hex</th>
+					<th>Color Decimal</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<th>Red</th>
+					<td>#f00</td>
+					<td>255, 0, 0</td>
+				</tr>
+
+				<tr>
+					<th>Green</th>
+					<td>#0f0</td>
+					<td>0, 255, 0</td>
+				</tr>
+
+				<tr>
+					<th>Blue</th>
+					<td>#00f</td>
+					<td>0, 0, 255</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td>name</td>
+					<td>#rrggbb</td>
+					<td>red, green, blue</td>
+				</tr>
+			</tfoot>
+
+		</table>
+
+  </body>
+</html>
