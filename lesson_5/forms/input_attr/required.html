@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Required Field</title>
+    <meta charset="utf-8">
+		<style>
+
+			input:required {
+				background-color: yellow;
+			}
+
+		</style>
+  </head>
+  <body>
+
+		<form action="#" method="post">
+			<fieldset>
+				<label>
+					Home Phone
+					<input type="tel" name="home_phone" required>
+				</label>
+				<br>
+				<label>
+					Business Phone
+					<input type="tel" name="business_phone">
+					<br>
+					<input type="submit" value="Save">
+				</label>
+			</fieldset>
+		</form>
+
+  </body>
+</html>
