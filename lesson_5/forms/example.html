@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Log In Form</title>
+    <meta charset="utf-8">
+		<style>
+
+			fieldset {
+				border: none; /* Important to reset this because many browsers add the border automatically */
+			}
+
+		</style>
+  </head>
+  <body>
+
+		<form action="#" method="post">
+			<fieldset>
+				<h1>Log In</h1>
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username">
+			</fieldset>
+
+			<fieldset>
+				<label for="password">Password</label>
+				<input type="text" name="password" id="password">
+			</fieldset>
+
+			<fieldset>
+				<input type="submit" value="Log In">
+				<input type="submit" value="Delete Account"
+					formaction="/account/delete">
+				<input type="submit" value="Forgot password"
+					formaction="account/password">
+				<input type="reset" value="Reset">
+			</fieldset>
+		</form>
+
+  </body>
+</html>
