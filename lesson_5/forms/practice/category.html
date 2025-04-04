@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Categories</title>
+    <meta charset="utf-8">
+		<style>
+
+			body {
+				background-color: rgb(60, 189, 232);
+			}
+
+			html {
+				font-size: 16px;
+			}
+			
+			fieldset {
+				border: 3px solid orange;
+				border-radius: 3%;
+				margin-top: 10px;
+				padding: 10px;
+			}
+
+			fieldset:last-child {
+				border: none;
+			}
+
+			input[type="submit"] {
+				width: 10%;
+				height: 40px;
+				font-size: 1.2rem;
+				border-radius: 8%;
+				border: 1px groove gray;
+			}
+
+		</style>
+  </head>
+  <body>
+
+		<form action="#" method="get">
+			<fieldset>
+				<h2>Choose a Category</h2>
+				<ul>
+					<li>
+						<label>
+							<input type="radio" value="Core" name="category" required>
+							Core
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="radio" value="plugins" name="category" required>
+							Plugins and Libraries
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="radio" value="conventions" name="category" required>
+							Conventions
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="radio" value="reviews" name="category" required>
+							Reviews
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="radio" value="opinion" name="category" required>
+							Opinion
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="radio" value="people" name="category" required>
+							People
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+
+			<fieldset>
+				<ul>
+					<h3>Now Choose some tags!</h3>
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="html">
+							HTML
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="css">
+							CSS
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="javascript">
+							JavaScript
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="ruby">
+							Ruby
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="rails">
+							Rails
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="python">
+							Python
+						</label>
+					</li>
+
+					<li>
+						<label>
+							<input type="checkbox" name="tag" value="django">
+							Django
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+
+			<fieldset>
+				<input type="submit" name="submit-search" value="Search">
+			</fieldset>
+		</form>
+
+  </body>
+</html>
