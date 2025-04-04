@@ -34,6 +34,13 @@ fieldset {
 	padding: 18px;
 }
 
+div[data-lastpass-icon-root] {
+	margin: 0 !important;
+	border: 0 !important;
+	padding: 0 !important;
+	float: none !important;
+}
+
 .basic-info input {
 	width: 35%;
 	display: inline-block;
@@ -41,6 +48,13 @@ fieldset {
 
 .basic-info label {
 	width: 12%;
+}
+
+.upper-form * {
+	padding: 8px;
+	vertical-align: middle;
+	margin-right: 1.5%;
+	margin-left: 0;
 }
 
 .upper-form label {
@@ -53,10 +67,12 @@ select {
 	border-radius: 8%;
 }
 
-.upper-form * {
-	padding: 8px;
-	vertical-align: middle;
-	margin-right: 1.5%;
+input:focus-visible {
+	border: 2px groove lightgreen;
+}
+
+.alone {
+	display: block;
 }
 
 .location label {
