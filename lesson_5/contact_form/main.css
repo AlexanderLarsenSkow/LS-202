@@ -62,7 +62,7 @@ div[data-lastpass-icon-root] {
 }
 
 .upper-form input,
-select {
+select, textarea {
 	border: 2px groove black;
 	border-radius: 8%;
 }
@@ -99,6 +99,13 @@ section input[type="radio"] {
 
 ul {
 	list-style: square inside;
+}
+
+textarea {
+	width: 50%;
+	border-radius: 2%;
+	margin-left: 5%;
+	resize: vertical;
 }
 
 .buttons {
