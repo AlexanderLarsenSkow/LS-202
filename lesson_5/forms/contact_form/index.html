@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+		<header>
+			<h1>Contact Information</h1>
+		</header>
+		
+		<main>
+			<form action="#" method="post">
+
+			<!----><fieldset class="upper-form basic-info"><!--
+				--><label for="first-name">First Name</label><!--
+				--><input type="text" name="first-name" id="first-name" required><!--
+
+				--><label for="last-name">Last Name</label><!--
+				--><input type="text" name="last-name" id="last-name" required><!--
+			--></fieldset>
+
+				<fieldset class="upper-form basic-info">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" required>
+				</fieldset>
+
+				<fieldset class="upper-form basic-info">
+					<label for="phone">Phone Number</label>
+					<input type="tel" name="phone" id="phone" placeholder="### ###-####" required>
+				</fieldset>
+
+				<fieldset class="upper-form location"><!--
+				--><label for="city">City</label><!--
+				--><input type="text" name="city" id="city" required><!--
+
+				--><label for="state">State</label><!--
+				--><select name="state" id="state" required>
+						<option value="" selected>Select One</option> 
+						<option>AK</option>
+						<option>AL</option>
+						<option>AR</option>
+						<option>AZ</option>
+						<option>CA</option>
+						<option>CO</option>
+						<option>CT</option>
+						<option>DC</option>
+						<option>DE</option>
+						<option>FL</option>
+						<option>GA</option>
+						<option>HI</option>
+						<option>IA</option>
+						<option>ID</option>
+						<option>IL</option>
+						<option>IN</option>
+						<option>KS</option>
+						<option>KY</option>
+						<option>LA</option>
+						<option>MA</option>
+						<option>MD</option>
+						<option>ME</option>
+						<option>MI</option>
+						<option>MN</option>
+						<option>MO</option>
+						<option>MS</option>
+						<option>MT</option>
+						<option>NC</option>
+						<option>ND</option>
+						<option>NE</option>
+						<option>NH</option>
+						<option>NJ</option>
+						<option>NM</option>
+						<option>NV</option>
+						<option>NY</option>
+						<option>OH</option>
+						<option>OK</option>
+						<option>OR</option>
+						<option>PA</option>
+						<option>RI</option>
+						<option>SC</option>
+						<option>SD</option>
+						<option>TN</option>
+						<option>TX</option>
+						<option>UT</option>
+						<option>VA</option>
+						<option>VT</option>
+						<option>WA</option>
+						<option>WI</option>
+						<option>WV</option>
+						<option>WY</option>
+					</select><!--
+
+				--><label for="zip">Zip</label><!--
+				--><input type="text" name="zip" id="zip" pattern="[0-9]{5}" placeholder="83646" required><!--
+				--></fieldset>
+
+				<section>
+					<h2>Tell us about you</h2>
+
+					<fieldset class="additional-info">
+						<h3>Which of these colors do you like best?</h3>
+
+						<label>
+							<input type="radio" name="color" value="red" checked>
+							Red
+						</label>
+
+						<label>
+							<input type="radio" name="color" value="purple">
+							Purple
+						</label>
+
+						<label>
+							<input type="radio" name="color" value="cyan">
+							Cyan
+						</label>
+
+						<label>
+							<input type="radio" name="color" value="blue">
+							Blue
+						</label>
+
+						<label>
+							<input type="radio" name="color" value="magenta">
+								Magenta
+						</label>
+					</fieldset>
+
+					<fieldset>
+						<h3>Which web technologies do you want to learn?</h3>
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="webtech" value="html">
+									HTML
+								</label>
+							</li>
+
+							<li>
+								<label>
+									<input type="checkbox" name="webtech" value="css">
+									CSS
+								</label>
+							</li>
+
+							<li>
+								<label>
+									<input type="checkbox" name="webtech" value="javascript">
+									JavaScript
+								</label>
+							</li>
+
+							<li>
+								<label>
+									<input type="checkbox" name="webtech" value="ruby">
+									Ruby
+								</label>
+							</li>
+
+							<li>
+								<label>
+									<input type="checkbox" name="webtech" value="rails">
+									Rails
+								</label>
+							</li>
+
+							<li>
+								<label>
+									<input type="checkbox" name="webtech" value="python">
+									Python
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset>
+						<h3>Do you have any comments for us?</h3>
+						<textarea name="comment" id="comment" placeholder="What do you want us to know?"
+							rows="6" cols="80"></textarea>
+					</fieldset>
+				</section>
+
+				<input type="hidden" name="time" id="time" value="2025-04-03">
+				<div class="buttons">
+					<input type="submit" value="Send">
+					<input type="reset">
+				</div>
+			</form>
+		</main>
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+	background-color: rgba(30, 140, 203, 0.84);
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+label {
+	display: inline-block;
+}
+
+fieldset {
+	border: 2px solid rgb(245, 237, 12);
+	border-radius: 2.5%;
+	background-color: rgb(247, 176, 188);
+	width: 80%;
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 18px;
+}
+
+.basic-info input {
+	width: 35%;
+	display: inline-block;
+}
+
+.basic-info label {
+	width: 12%;
+}
+
+.upper-form label {
+	font-weight: bold;
+}
+
+.upper-form input,
+select {
+	border: 2px groove black;
+	border-radius: 8%;
+}
+
+.upper-form * {
+	padding: 8px;
+	vertical-align: middle;
+	margin-right: 1.5%;
+}
+
+.location label {
+	width: 6%;
+}
+
+#city {
+	width: 36%;
+}
+
+.location select,
+.location input {
+	width: 15.5%;
+}
+
+section label {
+	font-style: italic;
+}
+
+section input[type="radio"] {
+	margin: 8px;
+	
+}
+
+ul {
+	list-style: square inside;
+}
+
+.buttons {
+	text-align: center;
+	width: 30%;
+	margin: 30px auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	width: 30%;
+	height: 40px;
+	margin: 4px 10px;
+	background-color: white;
+	font-weight: bold;
+	border: 2px groove black;
+	border-radius: 12%;
+}
+
+.hidden {
+	border: none;
+	width: 0;
+	height: 0;
+}
