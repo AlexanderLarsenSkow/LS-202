@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Float Practice</title>
+    <meta charset="utf-8">
+		<style>
+
+			html {
+	  		box-sizing: border-box;	
+			}
+
+			*, *::before, *::after {
+  			box-sizing: inherit;
+			}
+
+			body, section, article, aside, footer {
+				margin: 0;
+				padding: 0;
+			}
+
+			section {
+				max-width: 1000px;
+				margin: 0 auto;
+				background-color: lightgray;
+				overflow: hidden;
+				box-sizing: border-box;
+			}
+
+			h2, h3 {
+				text-align: center;
+			}
+
+			article, aside, footer {
+				padding: 1rem;
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+
+			article {
+				margin-right: -2px;
+				margin-bottom: -2px;
+				width: 70%;
+				float: left;
+				background-color: rgb(255, 255, 161);
+			}
+
+			aside {
+				position: relative;
+				width: 30%;
+				float: none;
+				overflow: hidden;
+				background-color: rgb(170, 255, 170);				
+			}
+
+			footer {
+				margin-bottom: -2px;
+				background-color: lightblue;
+				clear: both;
+			}
+
+		</style>
+  </head>
+  <body>
+		<section class="container">
+			<article>
+				<h2>Ipsum!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor sem sed purus vulputate, et aliquam justo congue. In eget metus et ex tempus varius. Donec quis laoreet nisi. Nullam semper suscipit dignissim. Vivamus rutrum nec enim ut placerat. Sed euismod pharetra elit, eget mattis lectus porta ac. Quisque volutpat nisi in neque molestie, in volutpat erat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sit amet orci ac nunc ultrices fringilla. Sed molestie hendrerit nibh, et eleifend mi posuere eu. Quisque eu efficitur urna. Donec tellus sem, egestas et aliquet sit amet, aliquet et ante. Mauris ultrices, nunc eu accumsan facilisis, ipsum nulla bibendum metus, sit amet pulvinar enim eros nec risus.</p>
+				<p>Maecenas sollicitudin, est nec lobortis pellentesque, mauris quam consequat lectus, sed aliquet nisl nunc et libero. Nunc a mi vel orci suscipit condimentum. Donec elementum ligula non tincidunt dapibus. Donec ut tincidunt elit. Nunc vestibulum pulvinar nunc at gravida. Praesent malesuada dui id odio rhoncus scelerisque. Duis tempus, arcu ut auctor semper, sapien est consectetur ante, in aliquam turpis sem vitae est. Duis in gravida nulla. Nullam facilisis, lorem in imperdiet porttitor, libero arcu vulputate sem, eu imperdiet orci turpis in lorem. Nulla facilisis, lectus at viverra hendrerit, elit odio vehicula velit, ac pharetra quam sapien ut justo. Suspendisse posuere, nisi commodo ultrices elementum, sem massa varius diam, non imperdiet ipsum nibh pulvinar sem. Donec gravida lorem a semper placerat. Sed semper laoreet ex quis iaculis.</p>
+				<p>Vivamus et nulla sollicitudin, auctor magna at, sodales neque. Curabitur ac dapibus mi. Ut tempor gravida felis, dictum malesuada mauris laoreet ut. Maecenas ut porttitor risus. Nullam consequat lobortis erat non aliquet. Praesent nec facilisis ligula. Etiam libero ligula, tempus tincidunt bibendum rutrum, laoreet porttitor neque. Donec sollicitudin leo ligula, quis pellentesque risus sodales quis. Nulla non cursus magna. Curabitur quis risus pellentesque, mollis elit eu, hendrerit quam. Donec lobortis velit vel sapien ornare, eget interdum nisl ornare. Cras sed mi lacinia, posuere quam nec, eleifend massa.</p>
+				<p>Nulla metus justo, imperdiet quis ante eget, accumsan blandit justo. Etiam rutrum nisl vitae vulputate semper. Aliquam sollicitudin tristique velit id molestie. Sed nec elit tellus. Vestibulum pulvinar dui lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin at consequat ex. Nulla imperdiet egestas ipsum, a sagittis dolor vehicula non. Aliquam tincidunt tortor elit, vitae dignissim tortor interdum eu. Fusce neque justo, finibus in sapien ut, commodo faucibus est. Morbi vitae elit at eros condimentum pellentesque luctus a augue. Donec quam lectus, efficitur sit amet felis semper, elementum hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ullamcorper rhoncus tortor, sed blandit nibh cursus sodales. Duis vitae eleifend massa, vel viverra dui. Sed quis egestas urna.</p>
+				<p>Phasellus eget felis venenatis, commodo dui sit amet, laoreet libero. Sed semper nisl eu euismod dictum. In a lacinia purus. Quisque eget erat nec est lacinia volutpat. Nunc ut est sit amet turpis pharetra pretium. Aliquam a convallis dui, nec molestie purus. Vestibulum id accumsan dui, at blandit augue. Nam lectus dui, rhoncus non mi id, euismod egestas dolor. Nulla tincidunt risus vitae risus porttitor sagittis. Maecenas auctor elit vitae tempor consectetur. Maecenas euismod diam in iaculis pretium.</p>
+			</article>		
+			<aside>
+				<h3>Lorem!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat ex pharetra, accumsan nunc accumsan, posuere nunc. Praesent sollicitudin sit amet ipsum vitae facilisis. Ut vel accumsan elit, non condimentum eros. Nam vel ipsum ante. Aenean vitae mauris volutpat, convallis erat eget, pellentesque neque. Praesent viverra sollicitudin ipsum. Phasellus eu tortor ipsum. Phasellus sodales gravida enim, non imperdiet lorem aliquam nec. Proin rutrum vulputate nulla, at volutpat leo posuere nec. Vivamus ac quam eget enim consectetur venenatis. Etiam nec feugiat tortor.</p>	
+				<p>Cras at dignissim magna, in congue purus. Donec tellus mi, fermentum ac elit eget, pellentesque pharetra nibh. Pellentesque mi justo, ultricies vulputate tellus sit amet, pretium tempor diam. Ut nec ex eget turpis condimentum porttitor. Integer eu purus eget dui condimentum accumsan a eget erat. Fusce eu scelerisque purus. Suspendisse elementum vestibulum odio in eleifend. In ornare ornare leo, at laoreet sem imperdiet efficitur. Nunc tempor, magna quis aliquet eleifend, massa sem imperdiet purus, ut ornare libero eros at diam. In hac habitasse platea dictumst. Etiam efficitur quam sit amet egestas convallis.</p>
+			</aside>
+			<footer>
+				<h3>Gemini!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique faucibus odio, at interdum eros pharetra eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent venenatis mauris dui, ut placerat massa pretium eu. In hac habitasse platea dictumst. Sed bibendum at nisi nec mattis. Morbi elementum nisl ut magna vehicula, et bibendum tortor fermentum. Praesent congue fermentum justo a sollicitudin. Donec quis cursus enim. Duis vulputate ligula vitae sem bibendum, ut congue nisi cursus.</p>
+			</footer>
+		</section>
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!-- ::after pseudo Element Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>::after</title>
+    <meta charset="utf-8">
+		<style>
+
+			html {
+				font-size: 48px;
+			}
+
+			p {
+				margin: 0;
+				padding: 0;
+				color: red;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			p::before,
+			p::after {
+				content: "-+-";
+				color: blue;
+			}
+
+			/* p::after {
+				content: "-+-"
+			} */
+
+		</style>
+  </head>
+  <body>
+
+		<p>Hello</p>
+
+  </body>
+</html>
