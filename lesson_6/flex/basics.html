@@ -1,0 +1,307 @@
+<html lang="en">
+  <head>
+    <title>3 Column Layout</title>
+    <meta charset="utf-8">
+		<style>
+
+			body {
+				background-color: gray;
+			}
+
+			form {
+				margin: auto;
+				background-color: white;
+				padding: 25px;
+				width: 60%;
+			}
+
+			div:first-child label {
+				width: 10%;
+			}
+
+			div:nth-child(2) label {
+				width: 15%;
+			}
+
+			.form-row {
+				margin-top: 20px;
+				display: flex;
+			}
+
+			.form-row input {
+				flex: 1;
+			}
+			
+			.form-row label {
+				font-weight: bold;
+				padding-right: 10px;
+			}
+
+			.column-layout {
+				background-color: white;
+				max-width: 1200px;
+				margin: 40px 20px auto;
+				line-height: 1.65;
+				padding: 20px 50px;
+				display: flex;
+			}
+
+			.column-layout section {
+				margin: 10px;
+				padding: 10px;
+			}
+
+			.column-layout section h1,
+			.column-layout section h2 {
+				text-align: center;
+			}
+
+			.main-column {
+				flex: 3;
+				order: 2;
+			}
+
+			.sidebar-1 {
+				flex: 1;
+				order: 1;
+			}
+
+			.sidebar-2 {
+				flex: 1;
+				order: 3;
+			}
+
+			.features {
+				background-color: lightgray;
+				border: 1px solid white;
+				margin: 20px 10px auto;
+				/* padding: 10px; */
+			}
+
+			.features div {
+				box-sizing: border-box;
+				/* margin: 20px; */
+				padding: 10px;
+				flex-basis: 30%;
+			}
+
+			@media (min-width: 1000px) { /* Useful for responsively designing based on media type like phones */
+				.features {
+					display: flex;
+					align-items: stretch;
+					justify-content: space-between;
+				}
+			}
+
+			.feature-1 {
+				background-color: lightblue;
+			}
+
+			.feature-2 {
+				background-color: lightgreen;
+			}
+
+			.feature-3 {
+				background-color: violet;
+			}
+
+			.responsive-rows {
+				background-color: white;
+				margin-top: 40px;
+				padding: 30px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+
+			.responsive-rows div {
+				font-size: 25px;
+				text-align: center;
+				background-color: maroon;
+				color: white;
+				width: 150px;
+				height: 100px;
+			}
+
+			.center {
+				background-color: rgb(61, 60, 60);
+				margin-top: 30px;
+				height: 300px;
+				color: white;
+				display: flex;
+			}
+
+			.center h1 {
+				margin: auto;
+			}
+
+			.cols-and-rows {
+				background-color: white;
+				display: flex;
+			}
+
+			.cols {
+				padding: 10px;
+				flex: 1;
+			}
+
+			.rows {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.rows .a {
+				background-color: lightblue;
+				flex: 1;
+			}
+
+			.rows .b {
+				background-color: lightgreen;
+				flex: 1;
+			}
+
+		</style>
+  </head>
+  <body>
+		<form>
+			<div class="form-row">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name">
+			</div>
+
+			<div class="form-row">
+				<label for="favorite-color">Favorite Color:</label>
+				<input type="text" name="favorite-color" id="favorite-color">
+			</div>
+		</form>
+
+		<div class="column-layout">
+			<section class="main-column">
+				<h1>Main Column</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut 
+					nisl erat, molestie sit amet nibh id, consequat ultrices eros. 
+					Sed vulputate accumsan dapibus. Fusce ac imperdiet erat. Morbi sagittis 
+					interdum lectus, sit amet tristique magna auctor eu. 
+				</p>
+				<p>
+					Donec at imperdiet massa. Vestibulum vitae condimentum leo. Etiam a erat risus. Donec consectetur 
+					lectus gravida ante convallis hendrerit. Suspendisse potenti. Mauris maximus sem 
+					eget tempor ultricies. Pellentesque porttitor, purus non placerat interdum, lorem 
+					ligula facilisis dolor,.
+				</p>
+
+				<p> ut vulputate risus leo congue nisi
+					Nulla enim est, posuere sit amet nulla et, molestie placerat ipsum. Etiam 
+					auctor lacus quis leo ullamcorper, in luctus erat iaculis. Suspendisse pulvinar 
+					volutpat scelerisque. In vehicula, enim et malesuada volutpat, ante tellus molestie 
+					ante, vel vehicula tellus felis rutrum magna. Quisque ac sem odio.
+				</p>
+
+				<p>
+					Nunc mauris tellus, mattis in erat vitae, aliquam tincidunt nisl. 
+					Cras nisl justo, dapibus a scelerisque sed, euismod eu tellus. Maecenas 
+					suscipit leo eu lacus ultricies fermentum. Interdum et malesuada fames ac 
+					ante ipsum primis in faucibus. Suspendisse felis nibh, aliquam sit amet 
+					fringilla sed, elementum a felis. Praesent suscipit iaculis risus at luctus.
+					Integer luctus ex ac neque rhoncus, et ultricies ante pulvinar.
+				</p>
+			</section>
+
+			<section class="sidebar-1">
+				<h2>Sidebar 1</h2>
+				<p>Praesent suscipit iaculis risus at luctus.
+					Integer luctus ex ac neque rhoncus, et ultricies ante pulvinar.</p>
+			</section>
+
+			<section class="sidebar-2">
+				<h2>Sidebar 2</h2>
+				<p>Praesent suscipit iaculis risus at luctus.
+					Integer luctus ex ac neque rhoncus, et ultricies ante pulvinar.</p>		
+			</section>	
+		</div>
+
+		<div class="features">
+			<div class="feature-1">
+				<h2>Feature 1</h2>
+				<p>Praesent suscipit iaculis risus at luctus.
+					Integer luctus ex ac neque rhoncus, et ultricies ante pulvinar.
+					ut vulputate risus leo congue nisi.  ut vulputate risus leo congue nisi
+					ut vulputate risus leo congue nisi.</p>
+			</div>
+
+			<div class="feature-2">
+				<h2>Feature 2</h2>
+				<p>Praesent suscipit iaculis risus at luctus.
+					Integer luctus ex ac neque rhoncus, et ultricies ante pulvinar.</p>
+			</div>
+
+			<div class="feature-3">
+				<h2>Feature 3</h2>
+				<p>Praesent suscipit iaculis risus at luctus.
+					Integer luctus ex ac neque rhoncus, et ultricies ante pulvinar.</p>
+			</div>
+		</div>
+
+		<div class="responsive-rows">
+			<div>
+				<h1>1</h1>
+			</div>
+			
+			<div>
+				<h1>2</h1>
+			</div>
+
+			<div>
+				<h1>3</h1>
+			</div>
+
+			<div>
+				<h1>4</h1>
+			</div>
+
+			<div>
+				<h1>5</h1>
+			</div>
+		</div>
+
+		<div class="center">
+			<h1>Center Me Plz</h1>
+		</div>
+
+		<div class="cols-and-rows">
+			<div class="cols">
+				<p>
+					Sed non eleifend ex, id posuere erat. Nulla id lobortis quam. Maecenas quis 
+					libero et mi feugiat blandit ut vitae libero. Sed nec massa sit amet diam ultricies varius.
+				</p>
+
+				<p>
+					Ut sagittis felis elit, eget placerat neque euismod ut. Mauris tincidunt posuere urna 
+					vitae tristique. Duis et consectetur dui. Nam cursus nec quam vel rutrum.
+				</p>
+
+				<p>
+					Fusce et tellus ac mauris feugiat efficitur. 
+				</p>
+
+				<p>
+					Nullam vel odio in urna porta malesuada ac quis lorem. Nullam in erat odio. Cras viverra, 
+					odio vel tincidunt facilisis, tellus mi tristique quam, eu rutrum massa dui in ex. 
+				</p>
+
+				<p>
+					Quisque efficitur, tellus placerat placerat imperdiet, augue ligula sagittis erat, 
+					sit amet convallis urna tortor vel magna. Sed ut interdum orci.
+				</p>
+			</div>
+
+			<div class="rows">
+				<div class="a">A</div>
+				<div class="b">B</div>
+			</div>
+		</div>
+
+  </body>
+</html>
