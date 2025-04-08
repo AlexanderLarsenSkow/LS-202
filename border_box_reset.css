@@ -1,0 +1,10 @@
+/* Use this template to make everything border box in the css file.
+	That is, every element box will add padding/border to the total width/height. */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
